@@ -1,8 +1,8 @@
 :root {
     --mdc-theme-primary: #1c1c1c;
-    --mdc-theme-secondary: #a0a0a0;
+    --mdc-theme-secondary: #252525;
     --mdc-theme-on-primary: #fff;
-    --mdc-theme-on-secondary: #a90023;
+    --mdc-theme-on-secondary: #c20027;
 }
 
 html {
@@ -19,10 +19,6 @@ body {
     top: 64px !important;
     height: calc(100% - 64px);
     padding-top: 1rem;
-}
-
-.main-content {
-    padding: 2rem;
 }
 
 #particles {
@@ -51,4 +47,65 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+.grid-container {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.feature-header  {
+    border-bottom: 1px solid var(--mdc-theme-on-secondary);
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.device-right {
+    height: 70vh;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    transform-style: preserve-3d;
+    transform: rotateX(40deg) rotateY(-10deg) rotateZ(15deg);
+    border-radius: 16px;
+}
+
+.device-left {
+    height: 70vh;
+    margin-top: 1rem;
+    margin-left: 12rem;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg) rotateY(-10deg) rotateZ(-15deg);
+    border-radius: 16px;
+}
+
+@media only screen and (max-width: 840px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .device-right {
+        margin-left: 0rem;
+        transform: none;
+    }
+
+    .device-left {
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+        transform: none;
+    }
+
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .device-container {
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .center-horizontal {
+        padding: 0 2rem 0 2rem;
+    }
 }
