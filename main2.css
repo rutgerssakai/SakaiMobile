@@ -1,0 +1,56 @@
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-drawer {
+    z-index: 1 !important;
+    position: fixed !important;
+    top: 64px !important;
+    height: calc(100% - 64px);
+    padding-top: 1rem;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.jumbotron:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background: url("resources/jumbotron-background.png");
+    background-size: cover;
+    background-position: center; 
+    width: 104vw;
+    height: 100vh;
+    margin: -2vw;
+  
+    /* Add the blur effect */
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.jumbotron-card {
+    padding: 2rem;
+}
+
+.grid-cell-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
