@@ -49,11 +49,6 @@ body {
     text-align: center;
 }
 
-.text-align-right {
-    text-align: right;
-    padding-right: 0.5rem;
-}
-
 .grid-container {
     padding: 0rem 2rem 2rem 2rem;
 }
@@ -107,5 +102,10 @@ body {
 
     .center-horizontal {
         padding: 0 2rem 0 2rem;
+    }
+
+    .text-align-right {
+        text-align: right;
+        padding-right: 0.5rem;
     }
 }
