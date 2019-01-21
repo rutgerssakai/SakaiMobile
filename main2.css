@@ -1,3 +1,10 @@
+:root {
+    --mdc-theme-primary: #1c1c1c;
+    --mdc-theme-secondary: #a0a0a0;
+    --mdc-theme-on-primary: #fff;
+    --mdc-theme-on-secondary: #a90023;
+}
+
 html {
     position: relative;
 }
@@ -18,39 +25,30 @@ body {
     padding: 2rem;
 }
 
-.jumbotron {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.jumbotron:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  
-    display: block;
-    background: url("resources/jumbotron-background.png");
-    background-size: cover;
-    background-position: center; 
-    width: 104vw;
-    height: 100vh;
-    margin: -2vw;
-  
-    /* Add the blur effect */
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+#particles {
+    height: 93vh;
+    background-color: #252525;
+    background-image: url("resources/app-logo.png");
+    background-size: 150vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .jumbotron-card {
-    padding: 2rem;
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    max-width: 80vw;
+    padding: 1rem;
 }
 
-.grid-cell-center {
+.center-horizontal {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }

@@ -6,68 +6,58 @@
     <title>Sakai Mobile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="main2.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main2.css" />
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
 <body class="mdc-typography">
     <div id="nav-container"></div>
     <!-- Content -->
-    <div class="jumbotron-container">
-        <div class="jumbotron">
-            <div class="mdc-layout-grid">
-                <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 grid-cell-center">
-                        <div class="jumbotron-card mdc-card mdc-card--outlined mdc-elevation--z6">
-                            <h1 class="mdc-typography--headline3" style="margin-bottom: 0; margin-top: 16px;">
-                                Sakai Mobile
-                            </h1>
-                            <p>Introducing a better, easier way to navigate Rutgers Sakai.</p>
-                        </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 grid-cell-center">
-                        <img src="resources/jumbotron-device.png" style="height: 70vh;" />
-                    </div>
-                </div>
+    <div class="jumbotron">
+        <div id="particles"></div>
+        <div>
+            <div class="jumbotron-card mdc-card mdc-card--outlined mdc-elevation--z23 mdc-theme--secondary-bg">
+                <p style="margin: 0;">Introducing a better, easier way to use Rutgers Sakai on Android and iOS</p>
             </div>
         </div>
     </div>
     <main class="main-content">
         <article>
-            <div>
-                <h1 class="mdc-typography--headline1">
-                    <span><img src="resources/SakaiLogo.png" alt="Sakai Mobile Logo"> About</span>
-                </h1>
+            <div class="center-horizontal">
+                <h1 class="mdc-typography--headline2">Sakai, now in your pocket.</h1>
                 <div class="mdc-typography--body1">
                     <p>
-                        Rutgers Sakai Mobile is an intuitive application designed to make browsing
-                        Rutgers' Sakai LMS easier than ever. Rutgers Sakai Mobile takes the best of
-                        Sakai's features and makes them at home on mobile. Rutgers Sakai Mobile is NOT
-                        affiliated with Rutgers University or the Sakai LMS project and is an entirely
-                        third-party solution.
+                        Sakai Mobile is designed to make navigating your coursework easier than ever. <br>
+                        We took the best of Sakai's features and made them feel at home on mobile. <br>
+                        <small>
+                            Rutgers Sakai Mobile is not affiliated with Rutgers University or 
+                            the Sakai LMS project and is an entirely third-party solution.
+                        </small>
                     </p>
-                    <p>
-                        You can contact the developers with concerns or feedback at <a
-                        href="mailto:rutgerssakaiapp@gmail.com">rutgerssakaiapp@gmail.com</a>
-                    </p>
-                    <p>
-                        In accordance with the GPL license utilized by Rutgers Sakai Mobile and a few of its dependencies: <br>
-                        You can view the source code for the iOS app <a href=https://github.com/PRAN1999/SakaiClientiOS>here</a>. <br>
-                        And you can view the source code for the Android app <a href=https://github.com/SChakravorti21/SakaiClientAndroid>here</a>
-                    </p>
-                    <p>
                 </div>
             </div>
-            <p></p>
+            
+
+            <p>
+                You can contact the developers with concerns or feedback at 
+                <a href="mailto:rutgerssakaiapp@gmail.com">rutgerssakaiapp@gmail.com</a>
+            </p>
+            <p>
+                In accordance with the GPL license utilized by Rutgers Sakai Mobile and a few of its dependencies: <br>
+                You can view the source code for the iOS app <a href=https://github.com/PRAN1999/SakaiClientiOS>here</a>. <br>
+                And you can view the source code for the Android app <a href=https://github.com/SChakravorti21/SakaiClientAndroid>here</a>
+            </p>
         </article>
     </main>
 </body>
 
 <!-- Required MDC Web JavaScript library -->
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- particle.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 <!-- Custom scripts, main.js must be last for setup functions to be defined -->
 <script src="topBar.js"></script>
