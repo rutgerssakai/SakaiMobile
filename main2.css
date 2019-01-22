@@ -13,6 +13,14 @@ body {
     margin: 0;
 }
 
+.action-icon {
+    font-size: 1.5em;
+}
+
+.action-icon:hover {
+    color: black;
+}
+
 .nav-drawer {
     z-index: 1 !important;
     position: fixed !important;
@@ -77,6 +85,42 @@ body {
     border-radius: 16px;
 }
 
+.dev-container {
+    margin: 2rem 0 2rem 0;
+}
+
+.dev-card-content {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.dev-name {
+    margin: 0;
+}
+
+.dev-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dev-type > h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+
+.prn-card__media {
+    background-image: url("resources/developer:pranay.jpeg");
+}
+
+.sac-card__media {
+    background-image: url("resources/developer:shoumyo.jpeg");
+}
+
+.ath-card__media {
+    background-image: url("resources/developer:atharva.jpg");
+}
+
 @media only screen and (max-width: 840px)  { 
     /* smartphones, iPhone, portrait 480x320 phones */ 
     .device-right {
@@ -93,6 +137,10 @@ body {
     .reverse-mobile {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .hide-mobile {
+        display: none;
     }
 
     .device-container {
