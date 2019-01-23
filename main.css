@@ -13,6 +13,22 @@ body {
     margin: 0;
 }
 
+.links {
+    text-align: center;
+    display:inline-block;
+    height:45px;
+    vertical-align: middle;
+}
+
+.links a {
+    vertical-align: middle;
+}
+
+.links img {
+    height:60px;
+    vertical-align: middle;
+}
+
 .centered-header {
     padding: 0 1rem;
     text-align: center;
@@ -41,24 +57,11 @@ body {
 
 #particles {
     height: 93vh;
-    overflow: hidden; 
-    position: relative; 
-}
-
-#particles::before {
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-color: #252525;
-    background-image: url(resources/app-logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("resources/app-logo.png");
     background-size: 150vh;
-    will-change: transform;
-    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .jumbotron-card {
@@ -68,6 +71,7 @@ body {
     right: 0;
     margin: auto;
     width: max-content;
+    height: max-content;
     max-width: 80vw;
     padding: 1rem;
 }
@@ -145,6 +149,7 @@ body {
 }
 
 @media only screen and (max-width: 840px)  { 
+
     /* smartphones, iPhone, portrait 480x320 phones */ 
     .device-right {
         margin-left: 0rem;
