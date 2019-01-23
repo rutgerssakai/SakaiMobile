@@ -16,16 +16,10 @@ body {
 .links {
     text-align: center;
     display:inline-block;
-    height:70px;
     vertical-align: middle;
 }
 
 .links a {
-    vertical-align: middle;
-}
-
-.links img {
-    height:60px;
     vertical-align: middle;
 }
 
