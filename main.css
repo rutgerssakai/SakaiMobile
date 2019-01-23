@@ -1,13 +1,168 @@
+:root {
+    --mdc-theme-primary: #1c1c1c;
+    --mdc-theme-secondary: #252525;
+    --mdc-theme-on-primary: #fff;
+    --mdc-theme-on-secondary: #c20027;
+}
+
+html {
+    position: relative;
+}
+
 body {
-    padding-top: 2rem;
+    margin: 0;
 }
 
 .centered-header {
-    padding: 3rem 1.5rem;
     text-align: center;
 }
 
 .article-body {
-    padding: 1rem 1.5rem;
+    padding: 0rem 3rem;
     text-align: center;
+}
+
+.action-icon {
+    font-size: 1.5em;
+}
+
+.action-icon:hover {
+    color: black;
+}
+
+.nav-drawer {
+    z-index: 1 !important;
+    position: fixed !important;
+    top: 64px !important;
+    height: calc(100% - 64px);
+    padding-top: 1rem;
+}
+
+#particles {
+    height: 93vh;
+    background-color: #252525;
+    background-image: url("resources/app-logo.png");
+    background-size: 150vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-card {
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    max-width: 80vw;
+    padding: 1rem;
+}
+
+.center-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.feature-header  {
+    border-bottom: 1px solid var(--mdc-theme-on-secondary);
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.device-right {
+    height: 70vh;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    transform-style: preserve-3d;
+    transform: rotateX(40deg) rotateY(-10deg) rotateZ(15deg);
+    border-radius: 16px;
+}
+
+.device-left {
+    height: 70vh;
+    margin-top: 1rem;
+    margin-left: 12rem;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg) rotateY(-10deg) rotateZ(-15deg);
+    border-radius: 16px;
+}
+
+.dev-container {
+    margin: 2rem 0 2rem 0;
+}
+
+.dev-card-content {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.dev-name {
+    margin: 0;
+}
+
+.dev-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dev-type > h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+
+.prn-card__media {
+    background-image: url("resources/developer:pranay.jpeg");
+}
+
+.sac-card__media {
+    background-image: url("resources/developer:shoumyo.jpeg");
+}
+
+.ath-card__media {
+    background-image: url("resources/developer:atharva.jpg");
+}
+
+@media only screen and (max-width: 840px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .device-right {
+        margin-left: 0rem;
+        transform: none;
+    }
+
+    .device-left {
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+        transform: none;
+    }
+
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .device-container {
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .center-horizontal {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .text-align-right {
+        text-align: right;
+        padding-right: 0.5rem;
+    }
 }

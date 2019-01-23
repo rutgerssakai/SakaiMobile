@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Rutgers Sakai</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
-		<link rel="stylesheet" 
-					href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-					integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-					crossorigin="anonymous">
-		<link rel="stylesheet" href="./main.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-  </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sakai Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-		<div id="nav-container"></div>
-		<main role="main" class="container">
-			<article>
-				<div class="centered-header">
-					<h1>
-						<span><img class="header-image" src="resources/SakaiLogo.png" alt="Sakai Mobile Logo"> Privacy</span>
-					</h1>
-				</div>
-				<div class="article-body">
-					<p>
-						Rutgers Sakai Mobile and it's developers are very committed to keeping your
-						information safe. Rutgers Sakai Mobile does make use of <a
-						href="https://get.fabric.io">Fabric</a> to track feature usage and crash
-						reporting using the <a href="https://answers.io">Answers</a> and <a
-						href="https://try.crashlytics.com">Crashlytics</a> services. In order to learn
-						more about what data Crashlytics and Answers are capable of collecting from you,
-						please see both <a
-						href="https://try.crashlytics.com/terms/privacy-policy.pdf">Crashlytics privacy
-						policy</a> as well as <a
-						href="https://answers.io/img/onepager/privacy.pdf">Answers' privacy policy</a>.
-						From these services, Rutgers Sakai Mobile only collects anonymized device
-						information and crash reports that do not disclose any other information about
-						you. These help improve Rutgers Sakai Mobile and focus developer efforts on the
-						areas that matter most. IP Address collection has also been disabled and is not
-						collected by Rutgers Sakai Mobile.
-						</p>
-						<p>
-						Rutgers Sakai Mobile uses cookies to manage a session with the Sakai servers
-						managed by Rutgers. Since Sakai does not have a standard method of
-						authenticating third-party services like Rutgers Sakai Mobile, storing cookies
-						are necessary in order for the app to function. Rutgers Sakai Mobile will never
-						see your password and the app will never use your credentials
-						directly as authentication is done through Rutgers Central Authentication in a
-						webview.
-						</p>
-						<p>
-						If you are a student at Rutgers, while using this app you are also subject to
-						Rutgers University <a
-						href="http://academicintegrity.rutgers.edu/academic-integrity-at-rutgers/">academic
-						integrity policy</a>, as well as any other rules and restrictions placed on
-						Rutgers' Sakai LMS.
-					</p>
-				</div>
-			</article>
-		</main>
-		
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			$.get("nav.html", function(data){
-    		$("#nav-container").replaceWith(data);
-			});
-		</script>
-  </body>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+<body class="mdc-typography">
+    <div id="nav-container"></div>
+    <main class="main-content">
+        <article>
+            <div class="centered-header">
+                <h1 class="mdc-typography--headline2">Privacy Policy</h1>
+            </div>
+            <div class="article-body">
+                <p>
+                    Rutgers Sakai Mobile and it's developers are very committed to keeping your
+                    information safe. Rutgers Sakai Mobile does make use of <a
+                    href="https://get.fabric.io">Fabric</a> to track feature usage and crash
+                    reporting using the <a href="https://answers.io">Answers</a> and <a
+                    href="https://try.crashlytics.com">Crashlytics</a> services. In order to learn
+                    more about what data Crashlytics and Answers are capable of collecting from you,
+                    please see both <a
+                    href="https://try.crashlytics.com/terms/privacy-policy.pdf">Crashlytics privacy
+                    policy</a> as well as <a
+                    href="https://answers.io/img/onepager/privacy.pdf">Answers' privacy policy</a>.
+                    From these services, Rutgers Sakai Mobile only collects anonymized device
+                    information and crash reports that do not disclose any other information about
+                    you. These help improve Rutgers Sakai Mobile and focus developer efforts on the
+                    areas that matter most. IP Address collection has also been disabled and is not
+                    collected by Rutgers Sakai Mobile.
+                    </p>
+                    <p>
+                    Rutgers Sakai Mobile uses cookies to manage a session with the Sakai servers
+                    managed by Rutgers. Since Sakai does not have a standard method of
+                    authenticating third-party services like Rutgers Sakai Mobile, storing cookies
+                    are necessary in order for the app to function. Rutgers Sakai Mobile will never
+                    see your password and the app will never use your credentials
+                    directly as authentication is done through Rutgers Central Authentication in a
+                    webview.
+                    </p>
+                    <p>
+                    If you are a student at Rutgers, while using this app you are also subject to
+                    Rutgers University <a
+                    href="http://academicintegrity.rutgers.edu/academic-integrity-at-rutgers/">academic
+                    integrity policy</a>, as well as any other rules and restrictions placed on
+                    Rutgers' Sakai LMS.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+
+<!-- Required MDC Web JavaScript library -->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- particle.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Custom scripts, main.js must be last for setup functions to be defined -->
+<script src="topBar.js"></script>
+<script src="main.js"></script>
+
 </html>

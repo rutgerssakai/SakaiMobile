@@ -1,17 +1,26 @@
-<nav class="navbar navbar-dark bg-dark fixed-top">
-	<a class="navbar-brand" href="index.html">Rutgers Sakai Mobile</a>
-	<button class="navbar-toggler" 
-									type="button" 
-									data-toggle="collapse" 
-									data-target="#navbarNavAltMarkup"
-									aria-controls="#navbarNavAltMarkup" 
-									aria-expanded="false" 
-									aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav mr-auto">
-			<a class="nav-item nav-link" href="privacy.html">Privacy Policy</a>
-		</div>
-	</div>
-</nav>
+<header class="mdc-top-app-bar mdc-top-app-bar--fixed" data-mdc-auto-init="MDCTopAppBar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <span class="mdc-top-app-bar__title">Rutgers Sakai Mobile</span>
+        </section>
+    </div>
+</header>
+
+<div class="mdc-top-app-bar--fixed-adjust">
+    <!-- Drawer -->
+    <aside class="mdc-drawer mdc-drawer--dismissible nav-drawer" data-mdc-auto-init="MDCDrawer">
+        <nav class="mdc-drawer__drawer">
+            <nav class="mdc-drawer__content mdc-list-group">
+                <div id="icon-with-text-demo" class="mdc-list">
+                <a class="mdc-list-item demo-drawer-list-item" href="index.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>About Sakai Mobile
+                </a>
+                <a class="mdc-list-item demo-drawer-list-item" href="privacy.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">security</i>Privacy Policy
+                </a>
+                </div>
+            </nav>
+        </nav>
+    </aside>
+</div>
