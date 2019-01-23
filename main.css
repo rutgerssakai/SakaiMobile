@@ -16,7 +16,7 @@ body {
 .links {
     text-align: center;
     display:inline-block;
-    height:45px;
+    height:70px;
     vertical-align: middle;
 }
 
@@ -71,7 +71,6 @@ body {
     right: 0;
     margin: auto;
     width: max-content;
-    height: max-content;
     max-width: 80vw;
     padding: 1rem;
 }
