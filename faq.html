@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sakai Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+<body class="mdc-typography">
+    <div id="nav-container"></div>
+    <main class="main-content">
+        <article>
+            <div class="header">
+                <h1 class="mdc-typography--headline2">FAQ - Android</h1>
+            </div>
+            <div class="body">
+                <h6 class="mdc-typography--headline6 faq-question">
+                    How does Google Smart Lock work, and how is it used?
+                </h6>
+                <p class="mdc-typography--body1">
+                    <a href="https://support.google.com/accounts/answer/6197437" target="_blank">
+                        <i>Smart Lock for Passwords</i>
+                    </a> is a Google service that allows for login credentials to be synced to your Google
+                    account. This uses the same mechanism by which Google Chrome saves your credentials
+                    for your convenience. <br />
+                    Since users found it annoying to manually log into Sakai every time their cookies
+                    expired, we used Smart Lock to securely save your credentials to your Google account.
+                    When the application is opened, we request the saved credentials and simply autofill
+                    the login form for your convenience. This means that even if your Sakai session expires 
+                    or you install Sakai Mobile on a new device, the application can automatically log you 
+                    into your Sakai account. <br />
+                    Note that the usage of Smart Lock means your credentials are not stored on-device
+                    and instead use Google's secure encryption and cloud storage services.
+                    The handling of credentials by Google services makes Smart Lock far more secure than
+                    storing your credentials somewhere in your device and risking it being compromised
+                    (especially since your NetID is tied to much more than just Sakai).
+                </p>
+
+                <h6 class="mdc-typography--headline6 faq-question">
+                    I accidentally clicked "Never" when prompted to save my password, how can I revert this?
+                </h6>
+                <p class="mdc-typography--body1">
+                    If you would like to re-enable Smart Lock in Sakai Mobile to benefit from auto-login, follow
+                    these steps:
+                </p>
+                <ol class="mdc-typography--body1">
+                    <li>
+                        In your Android device's <b><i>Settings</i></b> application, go to:
+                        <i><b>Google > </b>scroll down to go to <b>Smart Lock for Passwords</b></i>   
+                    </li>
+                    <li>
+                        Make sure "Sakai Mobile" is not in the <b><i>Never Save</i></b> list.
+                        If you do see "Sakai Mobile" in that list, tap on it and select <b><i>Ok</i></b>
+                        to remove it from that list.
+                    </li>
+                    <li>
+                        If you are logged into multiple Google accounts on your Android device, you might need
+                        to repeat Step 2 for all of those accounts. You can see <b><i>Smart Lock for Passwords</i></b>
+                        settings for other Google accounts by clicking on the top bar and switching between accounts.
+                    </li>
+                    <li>
+                        Close and re-open the Sakai Mobile application. If you are still logged in, this is because
+                        your Sakai cookies still represent an active session. In this case, press <b><i>Logout</i></b>
+                        at the bottom of the app's Settings tab (the right-most tab).
+                    </li>
+                    <li>
+                        Log in as usual inside the CAS Authentication WebView, and select <b><i>Save Password</i></b>
+                        when prompted to do so by Smart Lock.
+                    </li>
+                    <li>
+                        You are set for auto-login / credential persistence!
+                    </li>
+                </ol>
+
+                <h6 class="mdc-typography--headline6 faq-question">
+                    How do I remove my Sakai credentials from Smart Lock?
+                </h6>
+                <p class="mdc-typography--body1">
+                    If you no longer want Sakai Mobile to use Smart Lock for keeping you logged in, follow these steps:
+                </p>
+                <ol class="mdc-typography--body1">
+                    <li>
+                        Visit Google's 
+                        <b><i><a href="https://passwords.google.com" target="_blank">Password Manager</a></i></b>
+                        service.
+                    </li>
+                    <li>
+                        In the top-right, select the Google account which you saved your Sakai Mobile credentials with.
+                        If you're not sure which account you saved your credentials with, use the 
+                        <b><i>Search passwords</i></b> input and enter a search criteria like "Sakai" to see if
+                        the Sakai Mobile application shows up in the list.
+                    </li>
+                    <li>
+                        Select the Sakai Mobile application. Google will prompt you to enter your Google account's
+                        password for security purposes.
+                    </li>
+                    <li>
+                        At the bottom right of the saved credential, select <b><i>Delete</i></b>.
+                    </li>
+                    <li>
+                        Close and re-open the Sakai Mobile application on your Android device. If you are still logged in, 
+                        this is because your Sakai cookies still represent an active session. In this case, 
+                        press <b><i>Logout</i></b> at the bottom of the app's Settings tab (the right-most tab).
+                    </li>
+                    <li>
+                        When you visit the login screen, Smart Lock will not prompt you to select an account
+                        because it was deleted. After logging in, you can select <b><i>Never</i></b> when prompted
+                        to save credentials if you never want Sakai Mobile to save your credentials again.
+                    </li>
+                </ol>
+            </div>
+        </article>
+    </main>
+</body>
+
+<!-- Required MDC Web JavaScript library -->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- particle.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Custom scripts, main.js must be last for setup functions to be defined -->
+<script src="topBar.js"></script>
+<script src="main.js"></script>
+
+</html>

@@ -13,14 +13,20 @@ body {
     margin: 0;
 }
 
-.centered-header {
-    padding: 0 1rem;
-    text-align: center;
+.header {
+    padding: 0 3rem;
 }
 
-.article-body {
+.body {
     padding: 0rem 3rem;
-    text-align: center;
+}
+
+.faq-question {
+    margin-bottom: auto;
+}
+
+.body > ol > li {
+    margin-bottom: 0.5em;
 }
 
 .action-icon {
