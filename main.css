@@ -23,6 +23,13 @@ body {
 
 .faq-question {
     margin-bottom: auto;
+    position: relative;
+}
+
+.faq-question > span {
+    width: 0;
+    position: absolute; 
+    top: -5rem; 
 }
 
 .body > ol > li {
